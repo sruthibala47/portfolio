@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sruthi | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="app">
+    <nav class="nav fade-in">
+      <div class="nav-content">
+        <div class="logo">Sruthi</div>
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#work">Case Studies</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="social-icons">
+          <a href="#" class="icon-btn">𝕏</a>
+          <a href="#" class="icon-btn">🏀</a>
+          <a href="#" class="icon-btn"></a>
+        </div>
+      </div>
+    </nav>
+
+    <main style="padding-top: 80px;">
+      <!-- HERO SECTION -->
+      <section class="hero content-reveal">
+        <!-- Background Stars -->
+        <div class="hero-stars">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="color: var(--accent-purple);">
+            <path d="M12 2L14.5 9H21.5L16 13.5L18.5 20.5L12 16L5.5 20.5L8 13.5L2.5 9H9.5L12 2Z" />
+          </svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"
+            style="margin-left: 25px; margin-top: 10px; color: var(--accent-purple); opacity: 0.6;">
+            <path d="M12 2L14.5 9H21.5L16 13.5L18.5 20.5L12 16L5.5 20.5L8 13.5L2.5 9H9.5L12 2Z" />
+          </svg>
+        </div>
+
+        <!-- Additional Hero Decoration -->
+        <div class="decoration float-anim" style="top: 20%; left: 5%; color: var(--accent-purple); opacity: 0.4;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 8v8M8 12h8" />
+          </svg>
+        </div>
+
+        <div class="hero-text">
+          <div class="tag">Hello!</div>
+          <h1 style="margin-top: 20px;">I’m Sruthi,<br>I make things <span class="scribble-wrap">make sense.<svg
+                class="scribble" width="100%" height="20" viewBox="0 0 100 20" fill="none">
+                <path d="M0 10 Q 50 20 100 10" stroke="#8D7AC2" stroke-width="4" stroke-linecap="round" />
+              </svg></span></h1>
+          <p class="subtext" style="margin-top: 20px; font-size: 20px; line-height: 1.6;">Data. Design. Less
+            confusion.</p>
+          <a href="#work" class="btn-pill" style="margin-top: 30px;">View My Work</a>
+        </div>
+
+        <div class="hero-image">
+          <div class="arch-container">
+            <!-- Rotating Badge -->
+            <div class="badge-container" style="top: -30px; left: -30px; z-index: 10;">
+              <div class="rotating-badge">
+                <svg viewBox="0 0 100 100" width="120" height="120">
+                  <path id="circlePath" d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" fill="none" />
+                  <text font-size="10" font-weight="900" letter-spacing="2">
+                    <textPath xlink:href="#circlePath">✦ I AM AVAILABLE ✦ FOR INTERNSHIPS ✦</textPath>
+                  </text>
+                </svg>
+                <div class="badge-arrow">↗</div>
+              </div>
+            </div>
+
+            <!-- Waves Decoration -->
+            <div class="hero-waves">
+              <svg width="100" height="40" viewBox="0 0 100 40" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M0 10 Q 12.5 0 25 10 T 50 10 T 75 10 T 100 10" />
+                <path d="M0 20 Q 12.5 10 25 20 T 50 20 T 75 20 T 100 20" />
+                <path d="M0 30 Q 12.5 20 25 30 T 50 30 T 75 30 T 100 30" />
+              </svg>
+            </div>
+
+            <div class="arch-mask" style="background: var(--accent-purple); border: 2px solid #000;">
+              <img src="/hero-character-transparent-v3.png" alt="Sruthi"
+                style="width: 100%; height: 100%; object-fit: contain; transform: translateY(20px);">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="about content-reveal" style="background-color: #fff; padding: var(--spacing-xl) 40px;">
+        <div class="about-grid"
+          style="align-items: center; max-width: 1200px; margin: 0 auto; grid-template-columns: 1fr 1.2fr; gap: 100px;">
+          <div class="about-visual">
+            <div class="arch-container">
+              <div class="decoration float-anim heart-decoration" style="bottom: -10px; right: -10px;">
+                <svg width="35" height="35" viewBox="0 0 24 24" fill="currentColor" style="color: #FFB7B7;">
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+              </div>
+              <div class="decoration float-anim"
+                style="top: 10px; left: -20px; color: var(--accent-purple); opacity: 0.5;">
+                <svg width="40" height="20" viewBox="0 0 100 40" fill="none" stroke="currentColor" stroke-width="3">
+                  <path d="M0 20 Q 25 0 50 20 T 100 20" />
+                </svg>
+              </div>
+              <div class="arch-mask"
+                style="border-radius: 50%; aspect-ratio: 1/1; background: #fff; border: 2px solid #000;">
+                <img src="/about-photo.jpg" alt="Sruthi About"
+                  style="width: 100%; height: 100%; object-fit: contain; transform: scale(1.1) translateY(10px);">
+              </div>
+              <!-- Second Badge -->
+              <div class="badge-container" style="top: -20px; left: 70%;">
+                <div class="rotating-badge" style="background: var(--accent-purple); color: white;">
+                  <svg viewBox="0 0 100 100" width="100" height="100">
+                    <path id="circlePath2" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+                    <text font-size="9" font-weight="800" fill="white" letter-spacing="1.5">
+                      <textPath xlink:href="#circlePath2">✦ I AM AVAILABLE ✦ FOR INTERNSHIPS ✦</textPath>
+                    </text>
+                  </svg>
+                  <div class="badge-arrow">★</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-text">
+            <div class="tag">About</div>
+            <h2 style="font-size: 56px; margin-bottom: 24px;">Why I do what I do</h2>
+            <div class="main-line" style="margin-bottom: 32px;">I don’t like confusion. So I fix it.</div>
+            <p style="font-size: 18px; color: var(--text-secondary); line-height: 1.8;">
+              I don’t overcomplicate things. I break them down, question what doesn’t make sense, and rebuild them in a
+              way that actually works. Most of what I learn comes from trying, failing, and improving it the next time.
+              I’m still figuring things out — but each time, I make things clearer than before.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- EXPERIENCE SECTION -->
+      <section id="experience" class="experience content-reveal"
+        style="background-color: var(--bg-lavender); padding: var(--spacing-xl) 40px; position: relative;">
+        <!-- Arrow Decoration -->
+        <div class="decoration float-anim"
+          style="top: -60px; left: 15%; color: var(--text-primary); transform: rotate(-15deg);">
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 12h18m0 0l-6-6m6 6l-6 6" />
+          </svg>
+        </div>
+        <div class="about-grid"
+          style="align-items: flex-start; max-width: 1200px; margin: 0 auto; grid-template-columns: 1fr 1.2fr; gap: 100px;">
+          <!-- Left: Title & Intro -->
+          <div class="exp-text">
+            <div class="tag">Career</div>
+            <h2 style="font-size: 36px; margin-bottom: 24px; font-weight: 700;">What I've been doing</h2>
+            <p style="font-size: 16px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 40px;">
+              Not a long list. Just building, testing, and figuring things out through projects and experiments
+            </p>
+            <a href="#" class="btn-pill" style="padding: 12px 24px; font-size: 14px;">More About Me</a>
+          </div>
+
+          <!-- Right: Vertical Timeline -->
+          <div class="timeline">
+            <div class="timeline-line"></div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">NOV 2025 – PRESENT</div>
+              <div class="timeline-node" style="background: #E1F2F5;"></div>
+              <div class="timeline-content">
+                <h4 style="font-size: 18px; margin-bottom: 8px;">Founder – Beyond Tara</h4>
+                <p style="font-size: 15px;">Built a fashion brand from scratch – from idea to actual customers. Handled
+                  everything from product decisions to selling.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">FEB 2025 – NOV 2025 </div>
+              <div class="timeline-node" style="background: #F5E1F5;"></div>
+              <div class="timeline-content">
+                <h4 style="font-size: 18px; margin-bottom: 8px;">TeamRay Media</h4>
+                <p style="font-size: 15px;">Used data to improve content performance and engagement across platforms.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION SECTION -->
+      <section id="education" class="education content-reveal"
+        style="background-color: #fff; padding: var(--spacing-xl) 40px; position: relative;">
+        <div class="about-grid"
+          style="align-items: flex-start; max-width: 1200px; margin: 0 auto; grid-template-columns: 1fr 1.2fr; gap: 100px;">
+          <!-- Left: Title & Intro -->
+          <div class="exp-text">
+            <h2 style="font-size: 36px; margin-bottom: 24px; font-weight: 700;">Education</h2>
+            <p style="font-size: 16px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 40px;">
+              What and where I've studied.
+            </p>
+          </div>
+
+          <!-- Right: Vertical Timeline -->
+          <div class="timeline">
+            <div class="timeline-line"></div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">COLLEGE</div>
+              <div class="timeline-node" style="background: #EAF2E1;"></div>
+              <div class="timeline-content">
+                <h4 style="font-size: 18px; margin-bottom: 8px;">Coimbatore Institute Of Technology</h4>
+                <p style="font-size: 15px;">CGPA: 7.7</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">HSC</div>
+              <div class="timeline-node" style="background: #FDEBC3;"></div>
+              <div class="timeline-content">
+                <h4 style="font-size: 18px; margin-bottom: 8px;">Sri Chaitanya Techno School</h4>
+                <p style="font-size: 15px;">Percentage: 89% </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="skills" class="skills content-reveal"
+        style="padding: var(--spacing-xl) 40px; background-color: var(--bg-lavender); position: relative;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+          <div class="tag">My Brand</div>
+          <h2 style="font-size: 48px; margin-bottom: 60px;">My workflow is centered around being highly productive.</h2>
+          <div class="case-grid" style="grid-template-columns: 1fr 1fr; gap: 30px;">
+            <div class="case-card"
+              style="background-color: #F8F8FF; border: none; padding: 40px; border-radius: 40px; text-align: center;">
+              <h3 style="font-size: 28px; margin-bottom: 24px;">Technical Skills</h3>
+              <div class="skills-container">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Power BI</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">MS Excel</span>
+                <span class="skill-tag">CRM Tools</span>
+                <span class="skill-tag">Statistics</span>
+              </div>
+            </div>
+            <div class="case-card"
+              style="background-color: #FAF5FF; border: none; padding: 40px; border-radius: 40px; text-align: center;">
+              <h3 style="font-size: 28px; margin-bottom: 24px;">Soft Skills</h3>
+              <div class="skills-container">
+                <span class="skill-tag">Adaptability</span>
+                <span class="skill-tag">Communication</span>
+                <span class="skill-tag">Critical Thinking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUOTE SECTION -->
+      <section class="quote-section content-reveal"
+        style="background-color: #fff; padding: var(--spacing-xl) 40px; position: relative;">
+        <!-- Star Decoration -->
+        <div class="decoration float-anim" style="top: 40px; right: 10%; color: var(--accent-purple);">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2L14.5 9H21.5L16 13.5L18.5 20.5L12 16L5.5 20.5L8 13.5L2.5 9H9.5L12 2Z" />
+          </svg>
+        </div>
+        <div class="quote-card"
+          style="background: white; border: 1px solid #000; border-radius: 40px; padding: 80px 40px; text-align: center; max-width: 1000px; margin: 0 auto; position: relative;">
+          <blockquote
+            style="font-size: clamp(24px, 4vw, 36px); font-weight: 600; line-height: 1.3; margin-bottom: 40px; color: var(--text-primary);">
+            "If we have data, let's look at it. If all we have is opinions, let's go with mine."
+          </blockquote>
+          <div class="quote-author">
+            <div style="font-weight: 800; font-size: 20px;">Jim Barksdale</div>
+            <div style="color: var(--text-secondary); margin-top: 4px;">Former CEO of Netscape</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CASE STUDIES SECTION -->
+      <section id="work" class="case-studies content-reveal"
+        style="padding: var(--spacing-xl) 40px; background-color: var(--bg-lavender); position: relative;">
+        <!-- Squiggle Decoration -->
+        <div class="decoration float-anim" style="top: 20px; left: 5%; opacity: 0.3;">
+          <svg width="100" height="40" viewBox="0 0 100 40" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M0 20 Q 25 0 50 20 T 100 20" />
+          </svg>
+        </div>
+        <div style="max-width: 1200px; margin: 0 auto;">
+          <div class="tag">Work</div>
+          <h2 style="font-size: 48px; margin-bottom: 60px;">Featured Case Study</h2>
+          <div class="case-grid" style="display: flex; justify-content: center; gap: 30px;">
+            <div class="case-card" style="max-width: 600px; width: 100%;">
+              <a href="https://www.figma.com/proto/8NnRwecClb7tzSUgnvWknN/2024-UI%2FUX-Design-Crash-Course-Project-(Community)?page-id=320%3A160&node-id=320-161&p=f&viewport=140%2C149%2C0.23&t=c9Xli50ToCwZewq1-1&scaling=contain&content-scaling=fixed" target="_blank" style="text-decoration: none; color: inherit;">
+                <div class="case-image" style="background-color: #FFF5F0; overflow: hidden; border: 1px solid rgba(0,0,0,0.05);">
+                  <img src="/friskay.png" alt="Friskay" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="case-info">
+                  <h3 style="font-size: 24px; margin-bottom: 12px;">Friskay – UI/UX Design</h3>
+                  <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px;">
+                    A vibrant and playful UI/UX design for a cat food brand, focusing on high engagement and clear calls to action. Designed to make cats (and their owners) go bonkers!
+                  </p>
+                  <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;">
+                    <span class="skill-tag" style="font-size: 12px; padding: 4px 12px;">Figma</span>
+                    <span class="skill-tag" style="font-size: 12px; padding: 4px 12px;">UI/UX</span>
+                    <span class="skill-tag" style="font-size: 12px; padding: 4px 12px;">Product Design</span>
+                  </div>
+                  <span class="btn-text">View Figma Design →</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OTHER PROJECTS -->
+      <section id="projects" class="other-work content-reveal"
+        style="padding: var(--spacing-xl) 40px; background-color: #fff; position: relative;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+          <div class="tag">Other Projects</div>
+          <h2 style="font-size: 48px; margin-bottom: 60px;">Other Projects</h2>
+          <div class="other-grid" style="grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 40px;">
+            <div class="other-item"
+              style="background-color: #F8F8FF; border: none; padding: 30px; border-radius: 30px; text-align: left;">
+              <div class="case-image"
+                style="border-radius: 20px; height: 160px; margin-bottom: 24px; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid rgba(0,0,0,0.1);">
+                <img src="/propvision-ai.png" alt="PropVision AI"
+                  style="width: 100%; height: 100%; object-fit: cover; object-position: top center;">
+              </div>
+              <h4 style="font-size: 20px; font-weight: 700;">PropVision AI</h4>
+              <p
+                style="font-size: 11px; font-weight: 800; color: var(--text-secondary); margin-top: 12px; letter-spacing: 0.5px;">
+                CLIP • FAISS • PYTHON</p>
+              <p style="margin-top: 12px; font-size: 14px; opacity: 0.8; line-height: 1.6;">PropVision AI converts property images into intelligent insights using CLIP embeddings and FAISS similarity search, enabling smarter listings and visual property discovery.</p>
+            </div>
+            <div class="other-item"
+              style="background-color: #E1E1F5; border: none; padding: 30px; border-radius: 30px; text-align: left;">
+              <div class="case-image"
+                style="border-radius: 20px; height: 160px; margin-bottom: 24px; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid rgba(0,0,0,0.1);">
+                <img src="/reclaim-login.png" alt="Reclaim Project"
+                  style="width: 100%; height: 100%; object-fit: cover; object-position: top center;">
+              </div>
+              <h4 style="font-size: 20px; font-weight: 700;">Reclaim – Lost & Found</h4>
+              <p
+                style="font-size: 11px; font-weight: 800; color: var(--text-secondary); margin-top: 12px; letter-spacing: 0.5px;">
+                PYTHON (FLASK) • REACT • SQLITE</p>
+              <p style="margin-top: 12px; font-size: 14px; opacity: 0.8; line-height: 1.6;">A secure web app
+                streamlining campus lost-and-found. Features role-based access, automated verification workflows, and
+                in-app chat.</p>
+            </div>
+            <div class="other-item"
+              style="background-color: #EAF2E1; border: none; padding: 30px; border-radius: 30px; text-align: left;">
+              <div class="case-image"
+                style="border-radius: 20px; height: 160px; margin-bottom: 24px; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid rgba(0,0,0,0.1);">
+                <img src="/ride-analytics.png" alt="Ride Analytics Dashboard"
+                  style="width: 100%; height: 100%; object-fit: cover; object-position: top center;">
+              </div>
+              <h4 style="font-size: 20px; font-weight: 700;">Ride Analytics</h4>
+              <p
+                style="font-size: 11px; font-weight: 800; color: var(--text-secondary); margin-top: 12px; letter-spacing: 0.5px;">
+                POWER BI</p>
+              <p style="margin-top: 12px; font-size: 14px; opacity: 0.8; line-height: 1.6;">Dashboard analyzing 100K+
+                ride records to uncover trends and revenue performance using advanced DAX measures.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="contact-themed content-reveal">
+        <div class="contact-card-white">
+          <div class="contact-header-centered">
+            <div class="tag">Get in Touch</div>
+            <h2>Let's build something together.</h2>
+            <p style="font-size: 18px; color: var(--text-secondary); max-width: 600px; margin: 0 auto;">
+              I'm always open to new opportunities, collaborations, or just a friendly chat about tech and design.
+            </p>
+          </div>
+
+          <div class="contact-info-centered">
+            <div class="info-cards-row">
+              <a href="mailto:sruthibala715@gmail.com" class="info-card-light">
+                <div class="card-icon-light">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="card-content-light">
+                  <h4>Email & Phone</h4>
+                  <p>sruthibala715@gmail.com</p>
+                  <p style="font-size: 14px; opacity: 0.7;">+91 8754373150</p>
+                </div>
+              </a>
+
+              <a href="https://linkedin.com/in/sruthibalasundaram07" target="_blank" class="info-card-light">
+                <div class="card-icon-light">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </div>
+                <div class="card-content-light">
+                  <h4>LinkedIn</h4>
+                  <p>sruthibalasundaram07</p>
+                </div>
+              </a>
+
+              <a href="https://github.com/sruthibala47" target="_blank" class="info-card-light">
+                <div class="card-icon-light">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7a3.37 3.37 0 0 0-.94 2.58V22"></path></svg>
+                </div>
+                <div class="card-content-light">
+                  <h4>GitHub</h4>
+                  <p>sruthibala47</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 Sruthi. Made with clarity.</p>
+    </footer>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
